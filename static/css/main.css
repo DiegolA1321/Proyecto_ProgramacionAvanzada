@@ -1,0 +1,133 @@
+/* Fondo general con gradiente */
+body {
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #ddd !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* Cards para el formulario */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Botón de guardar */
+.btn-primary {
+    background-color: #1565C0;
+    border-color: #1565C0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+}
+
+/* Botón de eliminar */
+.btn-danger {
+    background-color: #b92b27;
+    border-color: #b92b27;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #8a1e1e;
+    border-color: #8a1e1e;
+}
+
+/* Tablas */
+.table {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #1565C0;
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-striped tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Alertas */
+.alert {
+    border-radius: 6px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: #1565C0;
+    box-shadow: 0px 0px 4px rgba(21, 101, 192, 0.5);
+    outline: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}

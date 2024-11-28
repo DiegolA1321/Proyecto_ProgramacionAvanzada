@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col-md-4 offset-md-4">
+    <table class="table table-striped table-bordered bg-white table-sm">
+        <thead>
+            <tr>
+                <td>Id Autor</td>
+                <td>Nombre Autor</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for autor in autores %}
+                <tr>
+                    <td>{{ autor.0 }}</td>
+                    <td>{{ autor.1 }}</td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

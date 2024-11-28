@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="col-md-4 offset-md-4">   
+    <table class="table table-striped table-bordered bg-white table-sm">
+        <thead>
+            <tr>
+                <td>Id Editorial</td>
+                <td>Nombre Editorial</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for editorial in editoriales %}
+                <tr>
+                    <td>{{ editorial.0 }}</td>
+                    <td>{{ editorial.1 }}</td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>  
+</div>
+
+{% endblock %}
