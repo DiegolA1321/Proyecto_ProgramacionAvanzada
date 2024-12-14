@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
 
+
 app = Flask(__name__)
 
 # MySQL Connection
@@ -113,3 +114,5 @@ def delete_libro(id):
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
+
+   
